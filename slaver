@@ -1,0 +1,9 @@
+# Modification of code found at http://TeroKarvinen.com/
+sysctl vm.swappiness=100
+apt update
+apt install -y puppet
+echo "165.227.183.78 mestari420" |sudo tee --append /etc/hosts
+echo "[agent]"|sudo tee --append /etc/puppet/puppet.conf
+echo "server = mestari420"|sudo tee --append /etc/puppet/puppet.conf
+puppet agent --enable
+service puppet restart
