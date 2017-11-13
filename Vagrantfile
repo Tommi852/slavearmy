@@ -1,5 +1,5 @@
 Vagrant.configure(2) do |config|
-  config.vm.box = "minimal/xenial64"
+  config.vm.box = "ubuntu/trusty64"
   config.vm.provision "shell", path: "slaver"
   config.vm.usable_port_range = (2200..20000)
 
