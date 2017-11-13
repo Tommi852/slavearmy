@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
 
   r = rand(36**10).to_s(36)
 
-  (1..3).each do |i|
+  (1..100).each do |i|
     config.vm.define "slave#{i}" do |slave|
 	slave.vm.hostname = "Slave#{i}-#{r}"
 
