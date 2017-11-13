@@ -1,11 +1,7 @@
 #!/bin/bash
-echo "Aloitetaanko orjuutus?"
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) 
-sudo apt-get update;
-sudo apt-get -y install virtualbox vagrant;
-vagrant up; break;;
-        No ) exit;;
-    esac
-done
+cp -r slavearmy/. /home/.
+sudo apt-get update
+sudo apt-get -y install vagrant virtualbox
+cd /home/
+vagrant up
+
