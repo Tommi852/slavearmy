@@ -23,7 +23,7 @@ Vagrant.configure(2) do |config|
 	slave.vm.hostname = "Slave#{i}-#{r}"
 
     slave.vm.provider "virtualbox" do |vb|
-       vb.memory = 180
+       vb.memory = 250
        vb.linked_clone = true
     end
     end
