@@ -1,5 +1,7 @@
 # Raportti orja koneiden teosta
 
+Tässä käytettiin valmistelussa kolmannen kotitehtävän ohjeita: https://github.com/Tommi852/linux1/blob/master/teht%C3%A4v%C3%A43.md
+
 Käytin muuten samaa metodia, kuin kotitehtävä kolmosessa, mutta muokkasin Vagrantfilen koodia hieman, sekä vaihdoin käytettävän distron hieman kevyempään. Vaihdoin myös master palvelimen omaan netissä olevaani palvelimeen.
 Sallin myös master palvelimella automaattisen sertifikaattien hyväksynnän lisäämällä /etc/puppet/puppet.conf tiedostoon rivin
 ```
